@@ -326,6 +326,24 @@ nav.navbar.bootsnav .navbar-toggle .icon-bar {
     transform: translateY(-3px);
   
 }
+#job-title {
+    font-size: 20px;
+}
+
+.mobile-break {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #job-title {
+        font-size: 16px;
+    }
+
+    .mobile-break {
+        display: inline;
+    }
+}
+
 
 /* Animation */
 @keyframes fadeInUp {
