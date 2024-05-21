@@ -39,8 +39,6 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 
     </head>
 	
@@ -527,7 +525,7 @@
 		<!--profiles end -->
 
 		<!--projects start -->
-		<!-- <section id="projects" class="portfolio">
+		<section id="projects" class="portfolio">
 			<div class="portfolio-details">
 				<div class="section-heading text-center">
 					<h2>projects</h2>
@@ -544,9 +542,9 @@
 											<a href="https://harshaa-r-s.github.io/harshaa.github.io/">
 												CheerBot
 											</a>
-										</div>
-									</div>
-								</div>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
 
 
 							
@@ -558,9 +556,9 @@
 											<a href="https://dineshbala.000webhostapp.com">
 												Path Finders
 											</a>
-										</div>
-									</div>
-								</div>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
 
 								<div class="col-sm-4">
 									<div class="item">
@@ -569,68 +567,19 @@
 											<a href="">
 												ANPR & FRS
 											</a>
-										</div>
-									</div>
-								</div>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
 
 
 					
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
 
-		</section> -->
-
-		<section id="projects" class="portfolio">
-			<div class="portfolio-details">
-			  <div class="section-heading text-center">
-				<h2>Projects</h2>
-			  </div>
-			  <div class="container">
-				<div class="portfolio-content">
-				  <div class="swiper-container">
-					<div class="swiper-wrapper">
-					  <div class="swiper-slide">
-						<div class="item">
-						  <img src="./assets/images/cbnew.png" alt="portfolio image"/>
-						  <div class="isotope-overlay">
-							<a href="https://harshaa-r-s.github.io/harshaa.github.io/">CheerBot</a>
-						  </div>
-						</div>
-					  </div>
-		  
-					  <div class="swiper-slide">
-						<div class="item">
-						  <img src="./assets/images/pfnew.png" alt="portfolio image"/>
-						  <div class="isotope-overlay">
-							<a href="https://dineshbala.000webhostapp.com">Path Finders</a>
-						  </div>
-						</div>
-					  </div>
-		  
-					  <div class="swiper-slide">
-						<div class="item">
-						  <img src="./assets/images/anpr_frs.png" alt="portfolio image"/>
-						  <div class="isotope-overlay">
-							<a href="#">ANPR & FRS</a>
-						  </div>
-						</div>
-					  </div>
-		  
-					  <!-- Add more slides as needed -->
-					</div>
-					<!-- Add Pagination if needed -->
-					<div class="swiper-pagination"></div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </section>
-		  
-		<!--projects end -->
-
+		</section><!--/.projects-->
 		
 		<!--projects end -->
 
@@ -813,36 +762,7 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-	
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-			  var swiper = new Swiper('.swiper-container', {
-				slidesPerView: 1,
-				spaceBetween: 10,
-				pagination: {
-				  el: '.swiper-pagination',
-				  clickable: true,
-				},
-				breakpoints: {
-				  640: {
-					slidesPerView: 1,
-					spaceBetween: 20,
-				  },
-				  768: {
-					slidesPerView: 1,
-					spaceBetween: 30,
-				  },
-				  1024: {
-					slidesPerView: 1,
-					spaceBetween: 40,
-				  },
-				},
-			  });
-			});
-		  </script>
-		  
-
         
     </body>
 	
