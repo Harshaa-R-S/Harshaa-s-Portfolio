@@ -90,19 +90,34 @@ html,body{
     position: relative;
     z-index: 9999;
 }
-@media (min-width: 1024px){}
+/* Keyframes for enlarging and shrinking animation */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    nav.navbar.bootsnav .navbar-toggle {
+        animation: pulsate 1s infinite;
+    }
+}
+
 nav.navbar.bootsnav.no-background {
     background-color: #080808;
     border: none;
-    
-    
 }
 
 nav.navbar.bootsnav {
     background-color: #2f2e2e;
     border-bottom: transparent;
-    box-shadow: 0 3px 15px rgba(0,0,0,.2);
-    
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
 }
 
 /*.navbar-brand*/
@@ -113,10 +128,10 @@ nav.navbar.bootsnav {
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
-
-    background-image:linear-gradient(135deg, #43CBFF 10%, #b623eb 100%);
-    -webkit-background-clip: text; 
-    background-clip: text; 
+    
+    background-image: linear-gradient(135deg, #43CBFF 10%, #b623eb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -126,11 +141,11 @@ nav.navbar.bootsnav {
 nav.navbar.bootsnav ul.nav > li > a {
     font-size: 16px;
     font-weight: 400;
-    text-transform:uppercase;
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
+    text-transform: uppercase;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
     transition: 0.3s linear;
 }
 
@@ -142,13 +157,12 @@ nav.navbar.bootsnav ul.nav > li > a {
 nav.navbar.bootsnav ul.nav > li > a:hover,
 nav.navbar.bootsnav ul.nav > li > a:focus,
 nav.navbar.bootsnav ul.nav > li.active > a {
-    color: transparent; 
+    color: transparent;
     background: linear-gradient(135deg, #43CBFF 10%, #b623eb 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
-
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -160,19 +174,18 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a,
 nav.navbar.bootsnav ul.nav > li > a {
-    color:#e0e0e0; 
+    color: #e0e0e0;
     padding: 35px 20px;
-    position: relative; 
+    position: relative;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
     transition: 0.3s linear;
 }
-
 
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,
@@ -187,28 +200,32 @@ nav.navbar.bootsnav ul.nav > li.active > a {
     -webkit-text-fill-color: transparent; /* Ensure text fill is transparent */
 }
 
-
 /*.menu-ui-design*/
-.menu-ui-design{overflow-y:scroll;height: 350px;}
+.menu-ui-design {
+    overflow-y: scroll;
+    height: 350px;
+}
 .menu-ui-design::-webkit-scrollbar {
-    width:5px;
+    width: 5px;
 }
 .menu-ui-design::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #000000;
+    background-color: #000000;
 }
 /*.menu-ui-design*/
-
-
 
 /*.navbar-toggle */
 /* Navbar Toggle Button with Gradient Border and Black Lines */
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    padding: 10px;
+    padding: 9px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     top: 0;
     border-radius: 5px; /* Optional: to match the original border radius */
     overflow: hidden;
@@ -221,13 +238,13 @@ nav.navbar.bootsnav .navbar-toggle::before {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     background: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
     z-index: -1; /* Place behind the toggle button content */
-    border-radius: 5px; /* Optional: to match the original border radius */
+    border-radius: 10px; /* Optional: to match the original border radius */
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude;
+    mask-composite: exclude;
 }
 
 nav.navbar.bootsnav .navbar-toggle .icon-bar {
@@ -251,6 +268,7 @@ nav.navbar.bootsnav .navbar-toggle .icon-bar {
 .navbar-header .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 4px;
 }
+
 
 /*-------------------------------------
         3.  Welcome
@@ -420,11 +438,11 @@ nav.navbar.bootsnav .navbar-toggle .icon-bar {
 }
 
 .single-about-txt h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     text-transform: initial;
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 250;
     margin-bottom: 1px; /* Adjust this to reduce gap */
     margin-top: 20px;
 }
@@ -448,6 +466,7 @@ nav.navbar.bootsnav .navbar-toggle .icon-bar {
     border: 0;
     padding: 0;
     margin-top: 3px;
+    word-break: break-all; /* Add this to handle long text properly */
 }
 
 .single-about-img {
@@ -504,9 +523,28 @@ nav.navbar.bootsnav .navbar-toggle .icon-bar {
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
     .single-about-img {
+        display: none; /* Hide the image on mobile view */
         margin-bottom: 30px;
     }
 
+    .single-about-txt h3 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .single-about-add-info h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .single-about-add-info p {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .single-about-add-info p {
+        word-break: break-all; /* Add this to handle long text properly */
+    }
 }
 
 
@@ -885,6 +923,13 @@ padding-bottom: 20px;}
 }
 .single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #000000;  }
 .single-profile:hover .profile-border {border:transparent;}
+
+/* Mobile view: horizontal scroll for profiles */
+/* Mobile view: horizontal scroll for profiles */
+/* Mobile view: horizontal scroll for profiles */
+/* Mobile view adjustments */
+
+
 /*-------------------------------------
         9. Projects
 --------------------------------------*/
@@ -967,6 +1012,31 @@ padding-bottom: 20px;}
     transform:scale(1);
     top:0;
 }
+.swiper-container {
+    width: 100%;
+    height: auto;
+    margin-top: 60px; /* Adjust based on your navbar height */
+}
+
+/* Ensure each slide takes full viewport width */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .swiper-container {
+      height: auto; /* Adjust based on your design */
+    }
+  }
+  
 
 /*-------------------------------------
         10. achievements
