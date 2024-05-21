@@ -1012,31 +1012,9 @@ padding-bottom: 20px;}
     transform:scale(1);
     top:0;
 }
-.swiper-container {
-    width: 100%;
-    height: auto;
-    margin-top: 60px; /* Adjust based on your navbar height */
-}
 
-/* Ensure each slide takes full viewport width */
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
 
-.item img {
-    width: 100%;
-    height: auto;
-}
-@media (max-width: 768px) {
-    .swiper-container {
-      height: auto; /* Adjust based on your design */
-    }
-  }
-  
+
 
 /*-------------------------------------
         10. achievements
