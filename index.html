@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
         
         <title>Harshaa's Portfolio</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
         <!-- For harshaa png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/harshaars.png"/>
@@ -38,6 +39,8 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
     </head>
 	
@@ -122,8 +125,7 @@
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>email</h3>
-											<p>harshaapandian
-												@gmail.com</p>
+											<p>harshaapandian@gmail.com</p>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -525,7 +527,7 @@
 		<!--profiles end -->
 
 		<!--projects start -->
-		<section id="projects" class="portfolio">
+		<!-- <section id="projects" class="portfolio">
 			<div class="portfolio-details">
 				<div class="section-heading text-center">
 					<h2>projects</h2>
@@ -542,9 +544,9 @@
 											<a href="https://harshaa-r-s.github.io/harshaa.github.io/">
 												CheerBot
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+										</div>
+									</div>
+								</div>
 
 
 							
@@ -556,9 +558,9 @@
 											<a href="https://dineshbala.000webhostapp.com">
 												Path Finders
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+										</div>
+									</div>
+								</div>
 
 								<div class="col-sm-4">
 									<div class="item">
@@ -567,19 +569,69 @@
 											<a href="">
 												ANPR & FRS
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+										</div>
+									</div>
+								</div>
 
 
 					
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		</section><!--/.projects-->
+		</section> -->
+
+		<section id="projects" class="portfolio">
+			<div class="portfolio-details">
+			  <div class="section-heading text-center">
+				<h2>Projects</h2>
+			  </div>
+			  <div class="container">
+				<div class="portfolio-content">
+				  <div class="swiper-container">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide">
+						<div class="item">
+						  <img src="./assets/images/cbnew.png" alt="portfolio image"/>
+						  <div class="isotope-overlay">
+							<a href="https://harshaa-r-s.github.io/harshaa.github.io/">CheerBot</a>
+						  </div>
+						</div>
+					  </div>
+		  
+					  <div class="swiper-slide">
+						<div class="item">
+						  <img src="./assets/images/pfnew.png" alt="portfolio image"/>
+						  <div class="isotope-overlay">
+							<a href="https://dineshbala.000webhostapp.com">Path Finders</a>
+						  </div>
+						</div>
+					  </div>
+		  
+					  <div class="swiper-slide">
+						<div class="item">
+						  <img src="./assets/images/anpr_frs.png" alt="portfolio image"/>
+						  <div class="isotope-overlay">
+							<a href="#">ANPR & FRS</a>
+						  </div>
+						</div>
+					  </div>
+		  
+					  <!-- Add more slides as needed -->
+					</div>
+					<!-- Add Pagination if needed -->
+					<div class="swiper-pagination"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		<!--projects end -->
+
+		
 		<!--projects end -->
 
 		<!--achievements start -->
@@ -706,6 +758,25 @@
 				</div>
 			</div><!--/.scroll-Top-->
 		</footer><!--/.footer-copyright-->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 1,
+					spaceBetween: 30,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					breakpoints: {
+						768: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						}
+					}
+				});
+			});
+		</script>
+		
 	
 		
 		<script src="assets/js/jquery.js"></script>
@@ -742,6 +813,36 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+	
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			  var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 1,
+				spaceBetween: 10,
+				pagination: {
+				  el: '.swiper-pagination',
+				  clickable: true,
+				},
+				breakpoints: {
+				  640: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				  },
+				  768: {
+					slidesPerView: 1,
+					spaceBetween: 30,
+				  },
+				  1024: {
+					slidesPerView: 1,
+					spaceBetween: 40,
+				  },
+				},
+			  });
+			});
+		  </script>
+		  
+
         
     </body>
 	
